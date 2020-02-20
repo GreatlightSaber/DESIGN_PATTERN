@@ -1,5 +1,6 @@
 package main;
 
+import main.abstractFactory.ComputerFactory;
 import main.factoryMethod.ModifiedSuperRobotFactory;
 import main.factoryMethod.Robot;
 import main.factoryMethod.RobotFactory;
@@ -35,7 +36,13 @@ public class Main {
 		 * 
 		 * */
 		
-
+		
+		// 예제 - 팩터리 메서드)
+		System.out.println("########## Abstract Factory ##########\n");
+		
+		ComputerFactory computerFactory = new ComputerFactory();
+		computerFactory.createComputer("LG");
+		
 	}
 
 }
