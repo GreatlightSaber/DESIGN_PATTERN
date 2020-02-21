@@ -1,6 +1,7 @@
 package main;
 
 import main.abstractFactory.ComputerFactory;
+import main.builder.NutritionFacts;
 import main.factoryMethod.ModifiedSuperRobotFactory;
 import main.factoryMethod.Robot;
 import main.factoryMethod.RobotFactory;
@@ -42,6 +43,23 @@ public class Main {
 		
 		ComputerFactory computerFactory = new ComputerFactory();
 		computerFactory.createComputer("LG");
+		
+		// 예제 - 빌더 패턴)
+		System.out.println("########## Builder ##########\n");
+		
+		// 예제1
+		NutritionFacts.Builder builder = new NutritionFacts.Builder(240, 8);
+		builder.calories(100);
+		builder.sodium(35);
+		builder.carbohydrate(27);
+		NutritionFacts coke1 = builder.build();
+		
+		// 예제2
+		NutritionFacts coke2 = new NutritionFacts.Builder(270, 5)
+				.calories(150)
+				.sodium(30)
+				.carbohydrate(50)
+				.build();
 		
 	}
 
