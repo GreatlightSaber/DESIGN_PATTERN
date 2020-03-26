@@ -1,11 +1,11 @@
 package main;
 
-import main.abstractFactory.ComputerFactory;
-import main.builder.NutritionFacts;
-import main.factoryMethod.ModifiedSuperRobotFactory;
-import main.factoryMethod.Robot;
-import main.factoryMethod.RobotFactory;
-import main.factoryMethod.SuperRobotFactory;
+import main.creation.abstractFactory.ComputerFactory;
+import main.creation.builder.NutritionFacts;
+import main.creation.factoryMethod.ModifiedSuperRobotFactory;
+import main.creation.factoryMethod.Robot;
+import main.creation.factoryMethod.RobotFactory;
+import main.creation.factoryMethod.SuperRobotFactory;
 
 public class Main {
 
@@ -62,5 +62,4 @@ public class Main {
 				.build();
 		
 	}
-
 }
