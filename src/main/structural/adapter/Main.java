@@ -2,7 +2,8 @@ package main.structural.adapter;
 
 import org.junit.Test;
 
-public class Exam {
+public class Main {
+	
 	@Test
 	public void test() {
 		MallarDuck duck = new MallarDuck();
